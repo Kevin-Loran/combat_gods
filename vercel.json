@@ -1,5 +1,5 @@
 {
-  "buildCommand": "pip install pygbag && python -m pygbag --build hellsgame_knight",
+  "buildCommand": "pip install pygbag Pillow && python -c \"from PIL import Image; Image.open('hellsgame_knight/assets/icone/an-8-bit-retro-styled-pixel-art-illustration-of-a-wooden-sword-free-png.webp').save('hellsgame_knight/favicon.png')\" && python -m pygbag --build hellsgame_knight",
   "outputDirectory": "hellsgame_knight/build/web",
-  "installCommand": "pip install pygbag"
+  "installCommand": "pip install pygbag Pillow"
 }
