@@ -2,7 +2,9 @@
 main.py — Entry point with full state machine.
 States: "menu" | "battle_select" | "game"
 Fade-to-black overlay for all transitions.
+Compativel com Pygbag (WebAssembly) via asyncio.
 """
+import asyncio
 import pygame
 import sys
 from settings import SCREEN_WIDTH, SCREEN_HEIGHT, FPS, TITLE
@@ -53,7 +55,7 @@ class _Fade:
             screen.blit(self._surf, (0, 0))
 
 
-def main():
+async def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     pygame.display.set_caption(TITLE)
@@ -157,7 +159,7 @@ def main():
 
         fade.draw(screen)
         pygame.display.flip()
+        await asyncio.sleep(0)
 
 
-if __name__ == "__main__":
-    main()
+asyncio.run(main())

@@ -1,0 +1,5 @@
+{
+  "buildCommand": "pip install pygbag && python -m pygbag --build hellsgame_knight",
+  "outputDirectory": "hellsgame_knight/build/web",
+  "installCommand": "pip install pygbag"
+}
