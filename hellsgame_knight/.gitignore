@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Claude Code (desenvolvimento local)
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs e relatórios gerados por ferramentas de dev
+dia1_sprite_report.txt
+*.log
