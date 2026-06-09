@@ -157,8 +157,8 @@ config = {
     autorun : 0,
     PYBUILD : "3.12",
     fb_ar   :  1.77,
-    fb_width : "1280",
-    fb_height : "720"
+    fb_width : "960",
+    fb_height : "540"
 }
 
 function show_infobox() {
@@ -178,7 +178,7 @@ function show_infobox() {
 
 </script>
 
-    <title>hellsgame_knight</title>
+    <title>CombatGods</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -222,25 +222,23 @@ function show_infobox() {
         canvas.emscripten {
             border: 0px none;
             background-color: transparent;
-            width: 100%;
-            height: 100%;
+            width: 960px;
+            height: 540px;
             z-index: 5;
-
             padding: 0;
             margin: 0 auto;
-
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
+            display: block;
         }
 
         body {
             font-family: arial;
             margin: 0;
-            padding: none;
-            background-color:powderblue;
+            padding: 0;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
 
         .topright{
